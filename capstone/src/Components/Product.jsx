@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SearchBox from './SearchBox';
+import SearchBox from '../SearchBox';
 
 const Product = ({ items, addtocart, setAddtocart, searchField }) => {
   return (
@@ -10,8 +10,10 @@ const Product = ({ items, addtocart, setAddtocart, searchField }) => {
 
         <Link to='/cart'> Cart </Link>
 
-        <SearchBox placeholder="Pick a shoe" handleChange={(e) => this.setState({searchField:e.target.value})} />
-        
+        <SearchBox
+          placeholder='Pick a shoe'
+          handleChange={(e) => this.setState({ searchField: e.target.value })}
+        />
       </header>
 
       {items.map((inventory, index) => (
@@ -28,12 +30,12 @@ const Product = ({ items, addtocart, setAddtocart, searchField }) => {
             <p>{inventory.category}</p>
             <p>${inventory.price}</p>
             <p>#{inventory.serial}</p>
-            <p>Stock: {inventory.quantity}</p>
+            <p>Stock: {inventory.inventory}</p>
             <button
               className='Add-Button'
               onClick={() => {
+                if (inventory.inventory > 0)
                 setAddtocart(addtocart.concat(items[index]));
-                console.log(addtocart);
               }}
             >
               Add to Cart

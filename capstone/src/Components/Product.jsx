@@ -52,6 +52,7 @@ const Product = (props) => {
                 >
                   Add to Cart
                 </button>
+                <hr></hr>
               </div>
             </div>
           ))
@@ -81,6 +82,7 @@ const Product = (props) => {
                 >
                   Add to Cart
                 </button>
+                <hr></hr>
               </div>
             </div>
           ))}

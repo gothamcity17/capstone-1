@@ -79,6 +79,7 @@ function App() {
             addtocart={addtocart}
             setAddtocart={setAddtocart}
           />
+          
         )}
       ></Route>
     </div>

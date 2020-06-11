@@ -26,7 +26,8 @@ export default function Cart({ addtocart }) {
               alt={item.imgAlt}
               className='Images'
             />
-            <p className='Details'> {item.price} </p>
+            <p className='Details'> {item.name} </p>
+            <p className='Details'> ${item.price} </p>
             <hr></hr>
           </div>
         );

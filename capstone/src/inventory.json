@@ -35,18 +35,7 @@
     "inventory": 2,
     "manufacturer": "Adidas"
   },
-  {
-    "img": "./Inventory/Four.jpeg",
-    "imgAlt": "Four",
-    "name": "Ultraboosts 19",
-    "id": 4,
-    "serial": 1240,
-    "price": 129.0,
-    "category": ["Running"],
-    "quantity": 1,
-    "inventory": 7,
-    "manufacturer": "Adidas"
-  },
+
   {
     "img": "./Inventory/Five.jpeg",
     "imgAlt": "Five",
@@ -118,5 +107,17 @@
     "quantity": 1,
     "inventory": 3,
     "manufacturer": "Nike"
+  },
+  {
+    "img": "./Inventory/Four.jpeg",
+    "imgAlt": "Eleven",
+    "name": "Yeezy",
+    "id": 11,
+    "serial": 1260,
+    "price": 220,
+    "category": ["Sneakers"],
+    "quantity": 1,
+    "inventory": 2,
+    "manufacturer": "Adidas"
   }
 ]

@@ -25,8 +25,6 @@ export default function Cart({ addtocart }) {
         );
       })}
 
-      
-      
       <div className='End'>
         <p> Total: </p>
         <button> Continue to Payment </button>

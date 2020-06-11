@@ -1,8 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SearchBox from '../SearchBox';
+import data from '../inventory.json'
 
 const Product = (props) => {
+  function ReduceInventory(id) {
+    const Copy = data;
+    for (var i = 0; i < Copy.length; i++) {
+      if (id === Copy[i].id) {
+        Copy[i].inventory--;
+      }
+    }
+  }
   return (
     <>
       <header className='App-Header'>
@@ -35,10 +44,10 @@ const Product = (props) => {
                 <button
                   className='Add-Button'
                   onClick={() => {
-                    if (inventory.inventory > 0)
-                      props.setAddtocart(
-                        props.addtocart.concat(props.items[index])
-                      );
+                    if (inventory.inventory > 0) ReduceInventory(inventory.id);
+                    props.setAddtocart(
+                      props.addtocart.concat(props.items[index])
+                    );
                   }}
                 >
                   Add to Cart
@@ -64,10 +73,10 @@ const Product = (props) => {
                 <button
                   className='Add-Button'
                   onClick={() => {
-                    if (inventory.inventory > 0)
-                      props.setAddtocart(
-                        props.addtocart.concat(props.items[index])
-                      );
+                    if (inventory.inventory > 0) ReduceInventory(inventory.id);
+                    props.setAddtocart(
+                      props.addtocart.concat(props.items[index])
+                    );
                   }}
                 >
                   Add to Cart

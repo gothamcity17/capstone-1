@@ -1,0 +1,137 @@
+body {
+  background-image: linear-gradient;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-Header {
+  background-color: grey;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  justify-content: space-evenly;
+}
+
+.App-Header a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.search {
+  background-color: grey;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.search input {
+  margin-right: 30%;
+  margin-left: 30%;
+  width: 40%;
+  background-color: white;
+  border: none;
+}
+
+.logo {
+  max-height: 200px;
+  max-width: 200px;
+  width: auto;
+  height: auto;
+}
+
+.search-bar {
+  appearance: none;
+  background-color: white;
+  border: 2px solid black;
+  height: 40px;
+  width: 250px;
+  color: black;
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+.Images {
+  max-width: 1555px;
+  margin-top: 1em;
+}
+
+.Images {
+  height: 125px;
+  width: 125px;
+}
+
+p {
+  color: black;
+  margin: 0 0 5px 0;
+}
+
+.Cart {
+  background-color: grey;
+  color: black;
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  display: block;
+  margin: 10px auto;
+  border: none;
+  position: relative;
+  bottom: 0;
+}
+
+.Cart:focus {
+  outline: none;
+}
+
+.Shopping {
+  text-align: center;
+}
+
+h1 {
+  color: black;
+}
+
+hr {
+  border: 1px solid grey;
+  box-sizing: border-box;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.empty-cart {
+  margin-top: 80px;
+}
+
+.Items {
+  border: 0.5px solid gray;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  width: 95%;
+
+}
+
+.Items button {
+  box-sizing: border-box;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: white;
+  background-color: grey;
+  border: none;
+  margin-bottom: 1em;
+}

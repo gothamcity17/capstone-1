@@ -13,15 +13,22 @@ function App() {
   const [searchProducts, setSearchProducts] = useState([]);
   const [searchBoolean, setSearchBoolean] = useState(false);
 
+
+  const deleteItem = (id) => {
+    console.log(id);
+    let splice = addtocart.splice(id);
+    setAddtocart(splice);
+  };
+
   let InventoryArray = [];
 
-  const Test = (pizza) => {
+  const Test = (searching) => {
     setSearchBoolean(true);
-    if (pizza === '') setSearchBoolean(false);
+    if (searching === '') setSearchBoolean(false);
 
     InventoryArray = [];
     setSearchProducts(InventoryArray);
-    setInput(pizza);
+    setInput(searching);
     let InputToLowerCase = Input.toLowerCase();
 
     console.log(InputToLowerCase);
@@ -78,8 +85,8 @@ function App() {
             items={items}
             addtocart={addtocart}
             setAddtocart={setAddtocart}
+            deleteItem={deleteItem}
           />
-          
         )}
       ></Route>
     </div>

@@ -5,11 +5,11 @@
     "name": "The Captain",
     "id": 1,
     "serial": 1234,
-    "price": 199.0,
+    "price": 199.99,
     "category": ["Boots"],
     "quantity": 1,
-    "inventory": 3,
-    "manufacturer": "Thursday Boot Co"
+    "inventory": 4,
+    "manufacturer": "Thursday Boot Co."
   },
   {
     "img": "./Inventory/Two.jpg",
@@ -17,11 +17,11 @@
     "name": "The Duke",
     "id": 2,
     "serial": 1236,
-    "price": 189.0,
+    "price": 199.99,
     "category": ["Boots"],
     "quantity": 1,
     "inventory": 6,
-    "manufacturer": "Thursday Boot Co"
+    "manufacturer": "Thursday Boot Co."
   },
   {
     "img": "./Inventory/Three.jpg",
@@ -29,32 +29,32 @@
     "name": "NMDs R1",
     "id": 3,
     "serial": 1238,
-    "price": 149.0,
+    "price": 140.99,
     "category": ["Sneakers"],
     "quantity": 1,
-    "inventory": 2,
+    "inventory": 3,
     "manufacturer": "Adidas"
   },
 
   {
     "img": "./Inventory/Five.jpeg",
     "imgAlt": "Five",
-    "name": "Ultraboosts 20",
+    "name": "Ultraboost 20",
     "id": 5,
     "serial": 1242,
-    "price": 139.0,
+    "price": 180.99,
     "category": ["Running"],
     "quantity": 1,
-    "inventory": 11,
+    "inventory": 8,
     "manufacturer": "Adidas"
   },
   {
     "img": "./Inventory/Six.jpg",
     "imgAlt": "Six",
-    "name": "Ultraboosts 4.0",
+    "name": "Ultraboost 4.0",
     "id": 6,
     "serial": 1244,
-    "price": 189.0,
+    "price": 180.99,
     "category": ["Running"],
     "quantity": 1,
     "inventory": 2,
@@ -63,10 +63,10 @@
   {
     "img": "./Inventory/Seven.jpeg",
     "imgAlt": "Seven",
-    "name": "574",
+    "name": "574 Core",
     "id": 7,
     "serial": 1246,
-    "price": 99.0,
+    "price": 79.99,
     "category": ["Sneakers"],
     "quantity": 1,
     "inventory": 5,
@@ -75,13 +75,13 @@
   {
     "img": "./Inventory/Eight.jpeg",
     "imgAlt": "Eight",
-    "name": "Lunar Glides",
+    "name": "LunarGlide 7",
     "id": 8,
     "serial": 1248,
-    "price": 99.0,
+    "price": 64.99,
     "category": ["Running"],
     "quantity": 1,
-    "inventory": 6,
+    "inventory": 9,
     "manufacturer": "Nike"
   },
   {
@@ -90,7 +90,7 @@
     "name": "Tree Dashers",
     "id": 4,
     "serial": 1250,
-    "price": 125.0,
+    "price": 125.99,
     "category": ["Running"],
     "quantity": 1,
     "inventory": 2,
@@ -102,10 +102,10 @@
     "name": "Crew Socks",
     "id": 10,
     "serial": 1252,
-    "price": 20.0,
+    "price": 19.99,
     "category": ["Socks"],
     "quantity": 1,
-    "inventory": 3,
+    "inventory": 12,
     "manufacturer": "Nike"
   },
   {
@@ -114,10 +114,10 @@
     "name": "Yeezy",
     "id": 11,
     "serial": 1260,
-    "price": 220,
+    "price": 220.99,
     "category": ["Sneakers"],
     "quantity": 1,
-    "inventory": 2,
+    "inventory": 1,
     "manufacturer": "Adidas"
   }
 ]

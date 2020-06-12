@@ -14,8 +14,27 @@ body {
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  margin-bottom: 20px;
   justify-content: space-evenly;
+}
+
+.App-Header a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.search {
+  background-color: grey;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.search input {
+  margin-right: 30%;
+  margin-left: 30%;
+  width: 40%;
+  background-color: white;
+  border: none;
 }
 
 .logo {
@@ -23,14 +42,6 @@ body {
   max-width: 200px;
   width: auto;
   height: auto;
-}
-
-.nav {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-right: 20px;
-  align-items: flex-start;
 }
 
 .search-bar {
@@ -47,31 +58,19 @@ body {
 }
 
 .Images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   max-width: 1555px;
-  margin: auto;
+  margin-top: 1em;
 }
 
-
 .Images {
-  height: 25%;
+  height: 125px;
   width: 125px;
-  max-width: 220px;
-  max-height: 330px;
-  object-fit: cover;
-  height: auto;
-  margin-bottom: 10px;
 }
 
 p {
   color: black;
   margin: 0 0 5px 0;
 }
-
-
-
 
 .Cart {
   background-color: grey;
@@ -99,9 +98,40 @@ h1 {
 }
 
 hr {
-  border: 1px solid black;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .empty-cart {
   margin-top: 80px;
+}
+
+.Items {
+  border: 0.5px solid gray;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  width: 95%;
+
+}
+
+.Items button {
+  box-sizing: border-box;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: white;
+  background-color: grey;
+  border: none;
+  margin-bottom: 1em;
 }

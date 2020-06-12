@@ -14,10 +14,9 @@ function App() {
   const [searchBoolean, setSearchBoolean] = useState(false);
 
 
-  const deleteItem = (id) => {
-    console.log(id);
-    let splice = addtocart.splice(id);
-    setAddtocart(splice);
+  const deleteItem = (index) => {
+    let filtered = addtocart.filter((element, i) => i !== index);
+    setAddtocart(filtered);
   };
 
   let InventoryArray = [];

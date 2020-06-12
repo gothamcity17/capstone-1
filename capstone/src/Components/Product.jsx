@@ -16,10 +16,7 @@ const Product = (props) => {
     <>
       <header className='App-Header'>
         <div className='Nav'>
-          <Link to='/' className='Home'>
-            {' '}
-            Home{' '}
-          </Link>
+          <Link to='/' className='Home'> Home </Link>
 
           <Link to='/cart'> Cart </Link>
         </div>
@@ -52,7 +49,7 @@ const Product = (props) => {
                     className='Add-Button'
                     onClick={() => {
                       if (inventory.inventory > 0)
-                        ReduceInventory(inventory.id);
+                        ReduceInventory(inventory.inventory);
                       props.setAddtocart(
                         props.addtocart.concat(props.items[index])
                       );

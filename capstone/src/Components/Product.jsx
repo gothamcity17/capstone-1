@@ -16,7 +16,10 @@ const Product = (props) => {
     <>
       <header className='App-Header'>
         <div className='Nav'>
-          <Link to='/' className='Home'> Home </Link>
+          <Link to='/' className='Home'>
+            {' '}
+            Home{' '}
+          </Link>
 
           <Link to='/cart'> Cart </Link>
         </div>

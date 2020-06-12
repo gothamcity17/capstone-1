@@ -18,7 +18,7 @@ export default function Cart({ addtocart, setAddtocart, deleteItem }) {
       </header>
       <br></br>
       <div className='item-grid'>
-        {addtocart.map((item,index) => {
+        {addtocart.map((item, index) => {
           cost += item.price;
           stock += item.quantity;
           return (
@@ -32,7 +32,7 @@ export default function Cart({ addtocart, setAddtocart, deleteItem }) {
               <hr></hr>
               <p className='Details'>Price: ${item.price} </p>
 
-              <button onClick={ () => deleteItem (index) }> Delete </button>
+              <button onClick={() => deleteItem(index)}> Delete </button>
             </div>
           );
         })}
@@ -41,8 +41,7 @@ export default function Cart({ addtocart, setAddtocart, deleteItem }) {
       <div className='End'>
         <p> Shoes: {stock} </p>
         <p> Subtotal: {cost} </p>
-        <p> Total: {cost * 1.0825} </p>
-
+        <p> Total: {(cost * 1.0825).toFixed(2)}  </p>
         <br></br>
         <button onClick={clearAll}> Clear All </button>
         <button> Continue to Payment </button>

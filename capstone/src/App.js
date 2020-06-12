@@ -13,7 +13,6 @@ function App() {
   const [searchProducts, setSearchProducts] = useState([]);
   const [searchBoolean, setSearchBoolean] = useState(false);
 
-
   const deleteItem = (index) => {
     let filtered = addtocart.filter((element, i) => i !== index);
     setAddtocart(filtered);
